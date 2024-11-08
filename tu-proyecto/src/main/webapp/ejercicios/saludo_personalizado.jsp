@@ -1,3 +1,4 @@
+<%@page import="javax.naming.ldap.ExtendedRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -13,15 +14,18 @@ la página debe mostrar un mensaje que diga "¡Hola [nombre] [apellido]!". -->
 	<h1>Introduzca su nombre y apellido</h1>
 	
 	<form action="">
-		<input type="text" id="nombre">
+		<input type="text" id="nombre" name="nombre">
 		<label for="nombre">Nombre</label>
 		
-		<input type="text" id="apellido">
+		<input type="text" id="apellido" name="apellido">
 		<label for="apellido">Apellido</label>	
-		
+		<br><br>
 		<input type="submit" value="Enviar">
 	</form>
-	
+	<%
+				String nombre = request.getParameter("nombre");
+				String apellido = request.getParameter("apellido");				
+	%>
 	
 
 
