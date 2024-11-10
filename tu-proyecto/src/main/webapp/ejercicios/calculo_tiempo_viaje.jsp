@@ -9,12 +9,25 @@
 <body>
 		
 			<%
-				String nombre = request.getParameter("nombre");
-				String apellido = request.getParameter("apellido");
-				String respuesta = "";
+				String distanciaStr = request.getParameter("distancia");
+				String velocidadStr = request.getParameter("velocidad");
+				Double tiempo = null;
+			
 				
-				if(nombre !=null && apellido != null){
-					respuesta = "¡Hola " + nombre + " " + apellido + " !"; 
+				if(distanciaStr !=null && velocidadStr != null){
+					
+					double distancia = Double.parseDouble(distanciaStr);
+					double velocidad = Double.parseDouble(velocidadStr);
+					
+					tiempo = distancia / velocidad; 
+				}
+				
+				
+				String respuesta;
+				if (tiempo != null) {
+				    respuesta = "Tardarás " + tiempo + " horas";
+				} else {
+				    respuesta = "";
 				}
 	%>
 	
@@ -23,14 +36,14 @@
 	<h1>Introduzca su nombre y apellido</h1>
 	
 	<form action="">
-		<label for="nombre">Nombre</label>
-		<input type="text" id="nombre" name="nombre">
+		<label for="distancia">Distancia en Km</label>
+		<input type="text" id="distancia" name="distancia">
 		
 		
-		<label for="apellido">Apellido</label>
-		<input type="text" id="apellido" name="apellido">
+		<label for="velocidad">Velocidad en Km/h</label>
+		<input type="text" id="velocidad" name="velocidad">
 		<br><br>
-		<input type="submit" value="Enviar">
+		<input type="submit" value="Calcular">
 	</form>
 	
 	<h2>  
