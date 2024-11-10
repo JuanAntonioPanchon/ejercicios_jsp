@@ -1,17 +1,14 @@
-<%@page import="javax.naming.ldap.ExtendedRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Calculo tiempo viaje</title>
 </head>
-<!-- Enunciado: Crea una página JSP que solicite al usuario su nombre y apellido por separado. Al enviar el formulario, 
-la página debe mostrar un mensaje que diga "¡Hola [nombre] [apellido]!". -->
 <body>
-
-	<%
+		
+			<%
 				String nombre = request.getParameter("nombre");
 				String apellido = request.getParameter("apellido");
 				String respuesta = "";
@@ -44,6 +41,5 @@ la página debe mostrar un mensaje que diga "¡Hola [nombre] [apellido]!". -->
 	<br>
 	<br>
 	<a href="../index.jsp">Volver al menu principal</a>
-
 </body>
 </html>
