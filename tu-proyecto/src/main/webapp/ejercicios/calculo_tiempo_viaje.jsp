@@ -33,7 +33,7 @@
 	
 	
 	
-	<h1>Introduzca su nombre y apellido</h1>
+	<h1>Calculemos el tiempo de viaje</h1>
 	
 	<form action="">
 		<label for="distancia">Distancia en Km</label>
