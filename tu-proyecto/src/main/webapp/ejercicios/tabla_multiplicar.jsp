@@ -20,45 +20,44 @@
 	<br>
 
 	<%
-				String numeroStr = request.getParameter("numero");
-				String resultado = "";
-				int multiplicacion = 0;
-			
-				
-				if(numeroStr !=null){
-					
-					int numero = Integer.parseInt(numeroStr);
-					
-					if(numero > 0 && numero <= 10){
+	String numeroStr = request.getParameter("numero");
+	String resultado = "";
+	int multiplicacion = 0;
+
+	if (numeroStr != null) {
+
+		int numero = Integer.parseInt(numeroStr);
+
+		if (numero > 0 && numero <= 10) {
 	%>
 
 	<h2>
 		Tabla de multiplicar del
-		<%= numero %>
+		<%=numero%>
 	</h2>
 	<table border="1">
 
 		<%
-						for(int i = 0; i <= 10 ; i++){
-	%>
+		for (int i = 0; i <= 10; i++) {
+		%>
 		<tr>
-			<td><%= numero%> X <%= i%></td>
-			<td><%= numero * i %></td>
+			<td><%=numero%> X <%=i%></td>
+			<td><%=numero * i%></td>
 		</tr>
 		<%
-					}
-	%>
+		}
+		%>
 	</table>
 
 	<%
-                } else {
-    %>
-		<p>El numero introducido no es válido</p>
+	} else {
+	%>
+	<p>El numero introducido no es válido</p>
 
 	<%
-                }
-				}
-    %>
+	}
+	}
+	%>
 
 	<br>
 	<br>
