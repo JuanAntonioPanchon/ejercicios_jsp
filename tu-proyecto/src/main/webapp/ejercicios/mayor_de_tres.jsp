@@ -32,7 +32,7 @@
 				
 				
 				String respuesta;
-				if (unoStr != null) {
+				if (mayor != null) {
 				    respuesta = "El numero mayor es " + mayor;
 				} else {
 				    respuesta = "";
