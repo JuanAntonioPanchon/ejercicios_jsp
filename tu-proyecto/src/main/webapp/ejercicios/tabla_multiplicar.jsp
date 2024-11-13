@@ -13,7 +13,7 @@
 
 	<form action="">
 		<label for="numero">Introduce un numero del 1 al 10</label> <input
-			type="number" id="numero" name="numero" min="1" max="10"> <br>
+			type="number" id="numero" name="numero" min="1" max="10" required> <br>
 		<br> <input type="submit" value="Calcular">
 	</form>
 	<br>

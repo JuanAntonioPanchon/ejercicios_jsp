@@ -37,11 +37,11 @@
 	
 	<form action="">
 		<label for="distancia">Distancia en Km</label>
-		<input type="number" id="distancia" name="distancia">
+		<input type="number" id="distancia" name="distancia" required>
 		
 		
 		<label for="velocidad">Velocidad en Km/h</label>
-		<input type="number" id="velocidad" name="velocidad">
+		<input type="number" id="velocidad" name="velocidad" required>
 		<br><br>
 		<input type="submit" value="Calcular">
 	</form>

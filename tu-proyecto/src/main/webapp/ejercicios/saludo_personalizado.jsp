@@ -27,11 +27,11 @@ la página debe mostrar un mensaje que diga "¡Hola [nombre] [apellido]!". -->
 	
 	<form action="">
 		<label for="nombre">Nombre</label>
-		<input type="text" id="nombre" name="nombre">
+		<input type="text" id="nombre" name="nombre" required>
 		
 		
 		<label for="apellido">Apellido</label>
-		<input type="text" id="apellido" name="apellido">
+		<input type="text" id="apellido" name="apellido" required>
 		<br><br>
 		<input type="submit" value="Enviar">
 	</form>

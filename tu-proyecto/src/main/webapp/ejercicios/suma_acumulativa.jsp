@@ -35,7 +35,7 @@
 	
 	<form action="">
 		<label for="numero">Introduce un numero</label>
-		<input type="number" id="numero" name="numero">
+		<input type="number" id="numero" name="numero" required>
 	
 		<br><br>
 		<input type="submit" value="Calcular suma acumulativa">

@@ -45,14 +45,14 @@
 	
 	<form action="">
 		<label for="uno">nº1</label>
-		<input type="number" id="uno" name="uno">
+		<input type="number" id="uno" name="uno" required="required">
 		
 		
 		<label for="dos">nº2</label>
-		<input type="number" id="dos" name="dos">
+		<input type="number" id="dos" name="dos" required="required">
 		
 		<label for="tres">nº3</label>
-		<input type="number" id="tres" name="tres">
+		<input type="number" id="tres" name="tres" required="required">
 		
 		<br><br>
 		<input type="submit" value="Mostrar nº Mayor">
