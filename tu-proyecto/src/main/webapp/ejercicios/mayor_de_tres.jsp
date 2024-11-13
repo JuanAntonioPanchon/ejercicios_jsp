@@ -31,12 +31,7 @@
 				}
 				
 				
-				String respuesta;
-				if (mayor != null) {
-				    respuesta = "El numero mayor es " + mayor;
-				} else {
-				    respuesta = "";
-				}
+				String respuesta = "El numero mayor es " + mayor;
 	%>
 	
 	
